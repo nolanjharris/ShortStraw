@@ -1,5 +1,6 @@
 var rando = randomShorty();
 var n = 0;
+var p = 2;
 function hideStraws(){
 	$('.straw').css('visibility', 'visible');
 	var strawSelectValue = $('#strawSelect').val();
@@ -16,6 +17,8 @@ function hideStraws(){
 		n--;
 	}
 	rando = randomShorty();
+	$('#player').html('Player 1');
+	p = 2;
 }
 
 
@@ -24,14 +27,13 @@ function randomShorty(){
 	return Math.floor(Math.random()*(strawCount)) + 1;
 }
 
-var p = 2;
+
 
 $(".shown").click(function(){
 	var strawCount = $('.shown').length;
 	$(this).css("visibility", "hidden");
 	console.log(rando);
 	if($(this).attr('id') !== "straw" + (rando + (6 - strawCount))){
-		// console.log($(this).attr('id'));
 		$('#draw').html('SAFE!').css('color', '#66ff66');
 		$('#strawCount select').css('color', '#66ff66');
 		$('header h1').css('color', '#66ff66');
