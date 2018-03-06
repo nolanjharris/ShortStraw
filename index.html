@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Short Straw</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<header>
+	<!-- <p>Who Will Draw</p> -->
+	<h1>The Short Straw</h1>
+</header>
+
+<div id="strawCount">
+	<p id="strawCount1">Straw Count</p>
+	<select id="strawSelect" onchange="hideStraws();">
+		<option value="2">2 Straws</option>
+		<option value="3">3 Straws</option>
+		<option value="4">4 Straws</option>
+		<option value="5">5 Straws</option>
+		<option value="6" selected="selected">6 Straws</option>
+	</select>
+</div>
+
+<!-- <div id="message">
+	<p>Choose the<br> amount of players</p>
+</div> -->
+
+<div id="instructions">
+	<p id="player">Player 1</p>
+	<p id="draw">Draw!!</p>
+</div>
+
+<div id="straws">
+	<span class="straw shown" id="straw1"><img src="redBlueStraw.png"></span>
+	<span class="straw shown" id="straw2"><img src="redBlueStraw.png"></span>
+	<span class="straw shown" id="straw3"><img src="redBlueStraw.png"></span>
+	<span class="straw shown" id="straw4"><img src="redBlueStraw.png"></span>
+	<span class="straw shown" id="straw5"><img src="redBlueStraw.png"></span>
+	<span class="straw shown" id="straw6"><img src="redBlueStraw.png"></span>
+	<span id="hand"><img src="hand2.png"></span>
+</div>
+
+<script type="text/javascript" src="../jQuery/jquery.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url("shortstrawbg3.png");
+	font-family: 'Amatic SC', cursive;
+	font-weight: bold;
+	height: 100%;
+}
+
+header {
+	height: 110px;
+	width: 600px;
+	margin: 0 auto;
+	border-radius: 20px;
+	background-color: #001a33;
+	text-align: center;
+	opacity: .85;
+	margin-top: 10px;
+}
+
+header > h1 {
+	color: white;
+	font-size: 105px;
+	line-height: 105px;
+	font-weight: bold;
+}
+
+header > p {
+	color: white;
+	font-size: 20px;
+}
+
+/*#message {
+	display: inline-block;
+	text-align: center;
+	margin: 0 auto !important;
+	color: #00b8e6;
+	font-size: 30px;
+	font-weight: bold;
+}*/
+
+#strawCount {
+	background-color: #001a33;
+	width: 250px;
+	height: 100px;
+	margin-left: 50px;
+	margin-top: 5px;
+	opacity: .85;
+	border-radius: 20px;
+	text-align: center;
+	position: relative;
+	display: inline-block;
+}
+
+#strawCount1 {
+	color: white;
+	background-color: #00b8e6;
+	position: absolute;
+	width: 140px;
+	top: -20px;
+	left: 55px;
+	padding: 0 10px;
+	font-size: 28px;
+	border: 2px solid #001a33;
+	border-radius: 10px;
+}
+
+#strawCount select {
+	font-size: 45px;
+	margin-top: 25px;
+	width: 200px;
+	padding: 0 15px;
+	background-color: #00b8e6;
+	text-indent: 30px;
+	border-radius: 10px;
+	font-family: 'Amatic SC', cursive;
+	font-weight: bold;
+	color: white;
+	border: 2px solid white;
+	outline: none;
+	/*transition: all 0.3s ease;*/
+}
+
+#strawCount select:hover{
+	cursor: pointer;
+	background-color: #008fb3;
+}
+
+option {
+	font-weight: bold;
+}
+
+
+#instructions {
+	display: inline-block;
+	float: right;
+	width: 250px;
+	height: 100px;
+	background-color: #001033;
+	opacity: .85;
+	border-radius: 20px;
+	margin-right: 50px;
+	margin-top: 5px;
+	text-align: center;
+	position: relative;
+}
+
+#player {
+	color: white;
+	background-color: #00b8e6;
+	position: absolute;
+	width: 140px;
+	top: -20px;
+	left: 55px;
+	padding: 0 10px;
+	font-size: 28px;
+	border: 2px solid #001a33;
+	border-radius: 10px;
+}
+
+/*#success {
+	background-color: #00cc00;
+}
+
+.loss {
+	background-color:; #ff471a;
+}*/
+
+#draw {
+	font-size: 45px;
+	font-family: 'Amatic SC', cursive;
+	font-weight: bold;
+	color: white;
+	padding: 0 15px;
+	background-color: #00b8e6;
+	border: 2px solid white;
+	border-radius: 10px;
+	margin-top: 25px;
+	width: 200px;
+	margin-left: 25px;
+}
+
+
+
+#straws {
+	width: 600px;
+	margin: 0 auto;
+	position: relative;
+	height: 400px;
+	text-align: center;
+}
+
+.straw {
+	/*margin-left: 4%;
+	margin-right: 4%;*/
+	cursor: pointer;
+	transition: all 0.1 ease;
+}
+
+#hand {
+	position: absolute;
+	z-index: 1;
+	top: 120px;
+	left: 0;
+}
+
